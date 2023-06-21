@@ -17,15 +17,15 @@ export default function Hero(props){
     const [count, setCount] = React.useState(0)
 
     const DesktopImg = [
-        {"src":Hero1Deskop, "key":1},
-        {"src":Hero2Deskop, "key":2},
-        {"src":Hero3Deskop, "key":3}
+        {"src":Hero1Deskop, "key":1, "text":"Discover innovative ways to decorate" },
+        {"src":Hero2Deskop, "key":2, "text":"We are available all across the globe"},
+        {"src":Hero3Deskop, "key":3, "text": "Manufactured with the best materials"}
     ]
 
     const MobileImg = [
-        {"src":Hero1Mobile, key:1},
-        {"src":Hero2Mobile, key:2},
-        {"src":Hero3Mobile, key:3}
+        {"src":Hero1Mobile, key:1, "text":"Discover innovative ways to decorate"},
+        {"src":Hero2Mobile, key:2, "text":"We are available all across the globe"},
+        {"src":Hero3Mobile, key:3, "text": "Manufactured with the best materials"}
     ]
 
     function increment(){
@@ -56,10 +56,10 @@ export default function Hero(props){
                 <Navbar screen={props.screen}/>
             </div>
             <div className="hero-text text-black">
-                <div className="text--proper m-8">
-                    <h2 className="my-6">Discover innovative ways to decorate</h2>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, et. Id architecto amet dolore dolor placeat ratione facilis vero pariatur quibusdam ducimus sit impedit doloribus reiciendis, ad earum? Eaque, voluptas!
-                    Nostrum consequuntur hic porro eos inventore rem, reiciendis fugiat assumenda aliquam eum eaque iure mollitia odio eius optio illum molestiae. 
+                <div className="text--proper m-8 ">
+                    <h2 className="my-6">{specificImage[count].text}</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, et. Id architecto amet dolore dolor placeat ratione facilis vero pariatur quibusdam ducimus sit impedit doloribus reiciendis, ad earum? Eaque, voluptas!
+                     </p>
                 </div>
                 <div className="shop-box m-8">
                     <span className="shop">SHOP NOW </span> <span className="p-2"><img src={Arrow}/></span>
