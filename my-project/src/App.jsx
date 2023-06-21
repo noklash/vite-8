@@ -6,10 +6,10 @@ function App() {
 const currentWidth = window.innerWidth
  const [screen, setScreen] = React.useState(currentWidth)
 
- window.addEventListener('resize', ()=>setstate(window.innerWidth))
+ window.addEventListener('resize', ()=>setScreen(window.innerWidth))
   return (
     <>
-      <Navbar/>
+      <Navbar screen={screen}/>
     </>
   )
 }
