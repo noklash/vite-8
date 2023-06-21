@@ -18,3 +18,60 @@
     position: absolute;
     font-size: 30px;
 }
+.hero{
+    display: block;
+}
+.hero--img{
+    width: 100%;
+}
+@media(min-width:470px){
+    .hero{
+        display: flex;
+    }
+    .hero--img{
+        min-width: 60%;
+    } 
+    .hero--text{
+        width:40%;
+    }
+}
+
+h2{
+    font-size: 2.6rem;
+    font-weight: 500;
+    line-height: 2.65rem;
+}
+.shop-box{
+    display: flex;
+}
+.shop{
+    letter-spacing: 5px;
+    font-weight: 500;
+    
+}
+.arrow-box{
+    width: fit-content;
+}
+
+/* .nav{
+    margin-bottom: -3rem;
+} */
+.nav--overlay{
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    margin-top: -19rem;
+    
+}
+
+/* i need to come back to write media query for tablets */
+
+@media(min-width:470px){
+    .nav--overlay{
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        margin-top: -23rem;
+        /* top: 0; */
+    }
+}

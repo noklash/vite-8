@@ -1,6 +1,7 @@
 import React from 'react'
 import './App.css'
-import Navbar from './Navbar'
+// import Navbar from './Navbar'
+import Hero from './Hero'
 
 function App() {
 const currentWidth = window.innerWidth
@@ -8,9 +9,10 @@ const currentWidth = window.innerWidth
 
  window.addEventListener('resize', ()=>setScreen(window.innerWidth))
   return (
-    <>
-      <Navbar screen={screen}/>
-    </>
+    <div className=''>
+      {/* <Navbar screen={screen}/> */}
+      <Hero screen={screen}/>
+    </div>
   )
 }
 

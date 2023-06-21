@@ -14,9 +14,9 @@ export default function Navbar(props){
         document.getElementById("mobileNav").style.width = "100%"
     }
     return(
-        <div className="flex mt-10 nav">
+        <div className="flex mt-10 nav--overlay ">
             
-               { props.screen > 470 && <div className="flex bg-black">
+               { props.screen > 470 && <div className="flex">
                     <div className="mx-12 py-2"> 
                         <img src={Logo}/> 
                     </div> 
@@ -27,7 +27,7 @@ export default function Navbar(props){
                         <li className="mx-4">contact</li>
                     </ul>
                 </div>}
-                { props.screen < 470 && <div className="bg-black flex"> 
+                { props.screen < 470 && <div className=" flex"> 
                     <div className="mx-12"><img src={Hamburger} onClick={openNav}/> </div>
                             <div className="ml-12"> <img src={Logo} alt="" /></div>
                             </div>
