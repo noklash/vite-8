@@ -1,12 +1,12 @@
 import React from "react";
-import Twitter from "./assets/Twitter.svg";
+import Logo from "./images/logo.svg";
 
 
 export default function Navbar(){
     return(
         <div className="flex">
-            <div className="logo mr-auto">
-                <img src={Twitter}/>
+            <div className="logo mr-auto bg-black">
+                <img src={Logo}/>
             </div>
         </div>
     )
