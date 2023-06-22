@@ -24,10 +24,7 @@
 .hero--img{
     width: 100%;
 }
-.hero-i{
-    margin-left: auto;
-    margin-right: auto;
-}
+
 @media(min-width:470px){
     .hero{
         display: flex;
@@ -39,6 +36,11 @@
         width:40%;
         margin-top: 8rem;
         
+    }
+
+    .hero-i{
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
