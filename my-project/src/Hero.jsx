@@ -9,6 +9,7 @@ import Arrow from "./images/icon-arrow.svg";
 import AngleRight from "./images/icon-angle-right.svg";
 import AngleLeft from "./images/icon-angle-left.svg";
 import Navbar from "./Navbar";
+import Page from "./Page";
 
 // import Navbar from "./Navbar";
 
@@ -49,28 +50,30 @@ export default function Hero(props){
     const specificImage = props.screen > 470? DesktopImg : MobileImg
     
     return(
+        <div>
         <div className="hero">
             <div className="hero--img">
-                <img src={specificImage[count].src}/>
+                <img src={specificImage[count].src} className="hero-i"/>
                 {/* <Navbar/> */}
                 <Navbar screen={props.screen}/>
             </div>
-            <div className="hero-text text-black">
-                <div className="text--proper m-8 ">
-                    <h2 className="my-6">{specificImage[count].text}</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, et. Id architecto amet dolore dolor placeat ratione facilis vero pariatur quibusdam ducimus sit impedit doloribus reiciendis, ad earum? Eaque, voluptas!
+            <div className="hero-text text-black mt-1">
+                <div className="text--proper m-10 p-2">
+                    <h2 className="my-12">{specificImage[count].text}</h2>
+                    <p className="my-4 py-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, et. Id architecto amet dolore dolor placeat ratione facilis vero pariatur quibusdam ducimus sit impedit doloribus reiciendis, ad earum? Eaque, voluptas!
                      </p>
                 </div>
-                <div className="shop-box m-8">
+                <div className="shop-box m-8 mb-auto">
                     <span className="shop">SHOP NOW </span> <span className="p-2"><img src={Arrow}/></span>
                 </div>
-                <div className="mt-10 flex bg-black arrow-box">
-                    <img src={AngleLeft} className="p-2 m-2" onClick={decrement}/>
-                    <img src={AngleRight} className="p-2 m-2" onClick={increment}/>
+                <div className="mt-8 flex bg-black arrow-box">
+                    <img src={AngleLeft} className="px-6 py-2 m-2" onClick={decrement}/>
+                    <img src={AngleRight} className="px-6 py-2 m-2" onClick={increment}/>
                 </div>
 
             </div>
-            
+            </div>
+            <Page/>
         </div>
     )
 }
