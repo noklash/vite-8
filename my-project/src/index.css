@@ -24,6 +24,10 @@
 .hero--img{
     width: 100%;
 }
+.hero-i{
+    margin-left: auto;
+    margin-right: auto;
+}
 
 @media(min-width:470px){
     .hero{
@@ -39,8 +43,8 @@
     }
 
     .hero-i{
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: 0;
+        /* margin-right: 0; */
     }
 }
 
