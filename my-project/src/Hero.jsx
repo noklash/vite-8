@@ -59,7 +59,7 @@ export default function Hero(props){
             </div>
             <div className="hero-text text-black mt-1">
                 <div className="text--proper m-10 p-2">
-                    <h2 className="my-12">{specificImage[count].text}</h2>
+                    <h2 className=" topic">{specificImage[count].text}</h2>
                     <p className="my-4 py-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, et. Id architecto amet dolore dolor placeat ratione facilis vero pariatur quibusdam ducimus sit impedit doloribus reiciendis, ad earum? Eaque, voluptas!
                      </p>
                 </div>
