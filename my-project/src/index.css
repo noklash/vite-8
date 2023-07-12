@@ -2,7 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-
+.topic{
+    /* margin-top: rem; */
+    margin-bottom: 1rem;
+}
 .overlay{
     height: 10%;
     width: 0;
@@ -102,6 +105,10 @@ h2{
     }
     .about-text{
         width: 50%;
+    }
+    .topic{
+        margin-top: 3rem;
+        margin-bottom: 3rem;
     }
 }
 .about{
